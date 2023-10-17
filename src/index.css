@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(15, 15, 15);
+}
+.heading h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding-top: 2rem;
+  text-align: center;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.6);
+}
+.heading h4 {
+  color: white;
+  text-align: center;
+}
+.searchBox {
+  text-align: center;
+  margin: 3rem;
+}
+.search-bar {
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+  font-size: 20px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 1.5rem;
+  background-color: linear-gradient(to left, rgba(204, 255, 51, 0.5), rgba(204, 255, 30, 0.5));
+  border-radius: 10px;
+  box-shadow: 0 7px 12px rgba(204, 255, 51, 0.5);
+  overflow: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.card img {
+  width: 100%;
+}
+.card .info {
+  color: white;
+  text-align: center;
+}
+.card .info h2 {
+  margin: 0;
+  font-weight: 900;
+  margin-top: 15px;
+}
+.card .info p {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
