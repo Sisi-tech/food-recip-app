@@ -18,6 +18,8 @@ body {
 .heading h4 {
   color: white;
   text-align: center;
+  font-size: 22px;
+  padding-top: 14px;
 }
 .searchBox {
   text-align: center;
@@ -43,7 +45,7 @@ body {
   width: 300px;
   height: 400px;
   margin: 1.5rem;
-  background-color: linear-gradient(to left, rgba(204, 255, 51, 0.5), rgba(204, 255, 30, 0.5));
+  background: linear-gradient(to left, rgba(204, 255, 51, 0.5), rgba(204, 255, 30, 0.5));
   border-radius: 10px;
   box-shadow: 0 7px 12px rgba(204, 255, 51, 0.5);
   overflow: auto;
@@ -67,4 +69,51 @@ body {
   font-size: 17px;
   letter-spacing: 2px;
   margin-top: 10px;
+}
+.card:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: linear-gradient(to left, rgba(204, 255, 51, 0.7), rgba(204, 255, 30, 0.9));
+  transition: 0.2s all;
+}
+.card:hover:before{
+  height: 100%;
+}
+.card:hover{
+  background: linear-gradient(to left, rgba(204, 255, 51, 0.5), rgba(204, 255, 30, 0.5));
+}
+.card .recipe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: justify;
+  padding: 0.5rem 1rem;
+  display: none;
+  transition: 0.2s all;
+}
+.card:hover .recipe{
+  display: block;
+}
+.recipe h2 {
+  margin-bottom: 10px;
+}
+.recipe img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recipe p {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a{
+  display: block;
+  text-align: center;
 }
