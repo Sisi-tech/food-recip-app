@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MealItem from './Components/MealItem';
+import "./food1.jpg";
 
 const Meal = () => {
     const [search, setSearch] = useState('');
@@ -36,8 +37,10 @@ const Meal = () => {
             </div>
             <div className='container'>
                 {
-                    (myMeal === null) ? (
-                        <p>Not Found</p>
+                    (myMeal.length === 0) ? (
+                        <div>
+                            <img src="src/food1.jpg" alt="background-pic" className='main-background-pic'/>
+                        </div>
                     ) : (
                         myMeal.map((meal) => {
                             return (
